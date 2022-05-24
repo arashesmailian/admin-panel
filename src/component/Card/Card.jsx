@@ -15,29 +15,29 @@ const Card = (props) => {
     const [expanded , setExpanded] = useState(false)
   return (
     <AnimateSharedLayout>
-        {
-            expanded? (
-                <ExpandedCard param={props} setExpanded={()=>setExpanded(false)}/>
+        {expanded ? (
+            <ExpandedCard param={props} setExpanded={()=>setExpanded(false)}/>
             ):
             <CompactCard param={props} setExpanded={()=>setExpanded(true)}/>
         }
     </AnimateSharedLayout>
-  )
-}
+  );
+};
 
 
 
 //compactCard
-function CompactCard({param , setExpanded}){
+function CompactCard({ param , setExpanded }){
   const Png = param.png;
   return(
-    <motion.div className="CompactCard"
+    <motion.div 
+      className="CompactCard"
       style={{
         background : param.color.backGround,
         boxShadow : param.color.boxShadow,
       }}
-      onClick={setExpanded}
       layoutId="expandableCard"
+      onClick={setExpanded}
       >
       <div className="radialBar">
         <CircularProgressbar
@@ -52,12 +52,12 @@ function CompactCard({param , setExpanded}){
         <span>Last 24 hours</span>
       </div>
     </motion.div>
-  )
+  );
 }
 
 
 //Expanded Card
-function ExpandedCard({param , setExpanded}){
+function ExpandedCard({ param , setExpanded }){
 
   //chart data
   const data = {
@@ -113,10 +113,12 @@ function ExpandedCard({param , setExpanded}){
 //chart data
 
   return(
-    <motion.div className="ExpandedCard"
-      style={{background: param.color.backGround,
-              boxShadow: param.color.boxShadow,
-    }}
+    <motion.div 
+      className="ExpandedCard"
+      style={{
+        background: param.color.backGround,
+        boxShadow: param.color.boxShadow,
+      }}
       layoutId="expandableCard"
     >
       <div style={{
@@ -132,7 +134,7 @@ function ExpandedCard({param , setExpanded}){
       </div>
       <span>Last 24 hours</span>
     </motion.div>
-  )
+  );
 }
 
-export default Card
+export default Card;

@@ -1,4 +1,4 @@
-//sidbar icons
+//sidbar imports
 import {
     BiHome,
     BiClipboard,

@@ -17,10 +17,10 @@ const Updates = () => {
                         <span>{update.time}</span> 
                     </div>
                 </div>
-            )
+            );
         })}
     </div>
-  )
-}
+  );
+};
 
-export default Updates
+export default Updates;

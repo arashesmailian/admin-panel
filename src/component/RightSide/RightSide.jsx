@@ -8,14 +8,14 @@ const RightSide = () => {
     <div className="RightSide">
         <div>
             <h3>Updates</h3>
-            <Updates/>
+            <Updates />
         </div>
         <div>
             <h3>Customer Review</h3>
-            <CustomerReview/>
+            <CustomerReview />
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default RightSide
+export default RightSide;
