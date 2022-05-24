@@ -5,7 +5,7 @@ import {
     BiUser,
     BiPackage,
     BiPieChartAlt,
-    BiDollar,
+    BiDollarCircle,
     BiMoney,
 } from "react-icons/bi";
 
@@ -43,7 +43,7 @@ export const cardsData = [
       },
       barValue: 70,
       value: "25,970",
-      png: BiDollar,
+      png: BiDollarCircle,
       series: [
         {
           name: "Sales",

@@ -18,10 +18,10 @@ const Cards = () => {
                         series={card.series}
                     />
                 </div>
-            )
+            );
         })}
     </div>
-  )
-}
+  );
+};
 
 export default Cards

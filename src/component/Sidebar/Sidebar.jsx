@@ -21,13 +21,13 @@ const Sidebar = () => {
                         key={index}
                         onClick={()=>setSelected(index)}
                     >
-                        <item.icon />
+                        <item.icon size="25px"/>
                         <span>{item.heading}</span>
                     </div>
                 )
             })}
             <div className="menueItem">
-                <BiLogOut />
+                <BiLogOut size="25px"/>
             </div>
         </div>
     </div>
